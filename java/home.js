@@ -45,7 +45,7 @@ query.once('value', function(snapshot) {
 
       mydiv.innerHTML += `
 
-      <div style="width: 200px;" class="bottom-product-card col-xl-3 col-lg-3">
+      <div style="width: 250px;" class="bottom-product-card col-md-3 col-xl-3 col-lg-3">
 
         <img style="height: 70px; margin-left: auto; margin-right: auto; margin-bottom: 10px; margin-top: 30px;" src="images/sta.png" alt="">
         <h6 class="max-two-lines" style="font-family:bahnschrift;">V-Guard Effino</h6>
