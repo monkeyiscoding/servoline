@@ -37,19 +37,18 @@ query.once('value', function(snapshot) {
     function(childSnapshot) {
       var mydiv = document.getElementById("top-products");
 
-      // var title = childSnapshot.val().title;
-      // var des = childSnapshot.val().description;
-      // var price = childSnapshot.val().price;
-      // var thumbnail = childSnapshot.val().thumbnail;
-      //
+      var title = childSnapshot.val().title;
+      var des = childSnapshot.val().description;
+      var thumbnail = childSnapshot.val().thumbnail;
+
 
       mydiv.innerHTML += `
 
-      <div style="" class="bottom-product-card col-md-4 col-xl-3 col-lg-3">
+      <div style="width: 220px;" class="bottom-product-card col-md-4 col-xl-3 col-lg-3">
 
-        <img style="height: 90px; margin-left: auto; margin-right: auto; margin-bottom: 10px; margin-top: 30px;" src="images/sta.png" alt="">
-        <h6 class="max-two-lines" style="font-family:bahnschrift;">V-Guard Effino</h6>
-        <h6 class="max-two-lines-2" style="font-weight: 300; font-family:bahnschrift;">V-Guard Effino 1.3 TV Stabilizer for up to 82 cm (32") ...</h6>
+        <img style="height: 90px; margin-left: auto; margin-right: auto; margin-bottom: 10px; margin-top: 30px;" src="${thumbnail}" alt="">
+        <h6 class="max-two-lines" style="font-family:bahnschrift;">${title}</h6>
+        <h6 class="max-two-lines-2" style="font-weight: 300; font-family:bahnschrift;">${des}</h6>
 
         <button class="bottom-product-items" type="button" name="button">View</button>
       </div>
