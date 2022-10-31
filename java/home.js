@@ -44,7 +44,7 @@ query.once('value', function(snapshot) {
 
       mydiv.innerHTML += `
 
-      <div style="width: 220px;" class="bottom-product-card col-md-4 col-xl-3 col-lg-3">
+      <div style="width: 250px;" class="bottom-product-card col-md-4 col-xl-3 col-lg-3">
 
         <img style="height: 90px; margin-left: auto; margin-right: auto; margin-bottom: 10px; margin-top: 30px;" src="${thumbnail}" alt="">
         <h6 class="max-two-lines" style="font-family:bahnschrift;">${title}</h6>
@@ -63,4 +63,9 @@ query.once('value', function(snapshot) {
     }
   )
 
+})
+
+
+$("#login").click(function(event){
+  window.location = "login/login.html"
 })
