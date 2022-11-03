@@ -27,6 +27,7 @@ query.once('value', function(snapshot) {
       <div style=" margin-top: 30px; justify-content: center; align-items: center; text-align: center;" id="${id}"class="category-div row col-xl-12 col-xxl-12">
 
         <h3 style="margin-bottom: 20px;">${title}</h3>
+          <hr>
 
       </div>`
 
@@ -42,6 +43,7 @@ query.once('value', function(snapshot) {
             var title = childSnapshot.val().title;
             var thumbnail = childSnapshot.val().thumbnail;
             var des = childSnapshot.val().des;
+            var key = childSnapshot.val().id;
 
             mydiv2.innerHTML += `
 
@@ -51,8 +53,10 @@ query.once('value', function(snapshot) {
                 <h6 class="max-two-lines" style="font-family:bahnschrift;">${title}</h6>
                 <h6 class="max-two-lines-2" style="font-weight: 300; font-family:bahnschrift;">${des}</h6>
 
-                <button class="bottom-product-items" type="button" name="button">View</button>
+                <button class="bottom-product-items" type="button" name="button"  onClick="myFunction(\``+ key + `\`)">View</button>
               </div>`;
+
+
 
 
           }
@@ -66,3 +70,9 @@ query.once('value', function(snapshot) {
   )
 
 })
+
+
+function myFunction(text){
+  localStorage.setItem("key",text);
+  window.location = "productoverview.html";
+}
