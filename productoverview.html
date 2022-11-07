@@ -22,9 +22,9 @@
 
   <div style="width: 100%; margin: 0px; padding-left: 20px;" class="container-fluid top-bar-products">
 
-    <i id="back" style="color: grey;" class="fa-solid fa-arrow-left fa-2x"></i>
+    <i id="back" style="color: grey;" class="fa-solid fa-arrow-left back-img"></i>
 
-    <h4 style="margin-left: 20px; margin-top: 5px;">Product Details</h4>
+    <h4 class="main-title" style="margin-left: 20px; margin-top: 5px;">Product Details</h4>
 
 
 
@@ -60,8 +60,42 @@
         <h4>WHY YOU HAVE TO CHOSE THIS STABILIZER</h4>
         <hr>
       </div>
+
+
+      <button id="send-enqurie"class="button" type="button" name="button">Send Enqurie</button>
+      <button class="button" type="button" name="button">Contact Us</button>
     </div>
   </div>
+
+
+  <div id="dialog" class="enquiry-dialog">
+
+    <div id="enqurie" class="send-enquiry-content">
+      <a href="#"><i style="color: black;" id="close"class="fa-solid fa-xmark close fa-2x"></i></a>
+
+      <h3 class="enqurie-title">SEND ENQURIE</h3>
+      <h5 class="enqurie-des">SEND US A ENQURIE SO WE CAN CONTACT YOU FOR YOU REQURIMENT</h5>
+      <div class="div-1">
+        <input id="name" style="margin-right: 40px;"class="input"type="text" name="" value="" placeholder="Full Name">
+        <input id="email" class="input"type="text" name="" value="" placeholder="Email">
+      </div>
+
+    <input id="phone" style="margin-top: 20px;" class="input"type="text" name="" value="" placeholder="Phone Number">
+    <textarea id="message" class="enqurie-message"style="margin-top: 20px; width: 100%; padding: 20px;" name="name" rows="8" cols="80" placeholder="Enter Some Message Fo Us"></textarea>
+    <button id="send-enqurie-button" class="send-button"type="button" name="button">Send Enqurie</button>
+    </div>
+
+
+    <div id="sended"class="enqurie-sended-dialog">
+
+      <img style="height: 200px; margin: 10px 0px 10px 0px;" src="gifs/check.gif" alt="">
+              <h2 class="enqurie-title" style="margin: 20px 0px 20px 0px;">Enqurie sent successfully</h2>
+              <h4 class="enqurie-des" style="margin: 20px 0px 20px 0px; color: grey;">We got your enqurie we are trying to reply your message possible as soon thanks for the enqurie!</h4>
+<a href="#"><i id="close-d" class="fa-solid fa-xmark close fa-2x"></i>
+</a>
+     </div>
+  </div>
+
 
 
   <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>

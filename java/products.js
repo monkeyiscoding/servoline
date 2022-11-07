@@ -47,7 +47,7 @@ query.once('value', function(snapshot) {
 
             mydiv2.innerHTML += `
 
-              <div style="margin-left: 30px; margin-top: 20px; text-align: center; width: 220px; height: 300px;" class="bottom-product-card col-md-4 col-xl-3 col-lg-3">
+              <div style="margin-left: 30px; margin-top: 20px; text-align: center; width: 220px; height: auto; min-height: 300px;" class="bottom-product-card col-md-4 col-xl-3 col-lg-3">
 
                 <img style="height: 90px; margin-left: auto; margin-right: auto; margin-bottom: 10px; margin-top: 30px;" src="${thumbnail}" alt="">
                 <h6 class="max-two-lines" style="font-family:bahnschrift;">${title}</h6>
