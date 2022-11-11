@@ -544,3 +544,150 @@ html{
   height: auto;
   background-color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // about page */
+
+.top-about-div{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 150px;
+  font-family: bahnschrift;
+  height: 700px;
+}
+
+.about-title{
+  color: var(--primary-color);
+}
+
+.about-des{
+  color: grey;
+  font-weight: 300;
+}
+
+.about-top-img-1{
+  height: 200px;
+  width: 200px;
+  padding: 50px;
+  background-color: #9f5eb5;
+  border-radius: 1000px;
+  position: absolute;
+  left: 20%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  z-index: 0;
+  color: white;
+}
+
+.about-top-img-2{
+  height: 200px;
+  width: 200px;
+  padding: 50px;
+  background-color: #acb55e;
+  border-radius: 1000px;
+  position: absolute;
+  margin-top: 260px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  left: 28%;
+  z-index: 0;
+  color: white;
+}
+
+.about-top-img-3{
+  height: 200px;
+  width: 200px;
+  color: white;
+  padding: 50px;
+  background-color: #44b3a6;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 1000px;
+  position: absolute;
+  right: 20%;
+  z-index: 0;
+}
+
+.about-top-img-4{
+  height: 200px;
+  width: 200px;
+  color: white;
+  padding: 50px;
+  background-color: #4465b3;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 1000px;
+  position: absolute;
+  margin-top: 260px;
+  right: 28%;
+  z-index: 0;
+}
+
+.button-about{
+  text-align: center;
+  margin-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+}
+
+.who-we-are{
+  color: black;
+}
+
+.work-image{
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}

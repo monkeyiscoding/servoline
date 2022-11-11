@@ -154,3 +154,12 @@ $("#send-enqurie-button").click(function(event) {
 
 
 })
+
+$("#contact-us").click(function(){
+  $("#dialog-contact").fadeIn();
+})
+
+
+$("#close-contact").click(function(){
+  $("#dialog-contact").fadeOut();
+})

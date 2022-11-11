@@ -37,7 +37,7 @@
       </div>
 
 
-      <a class="menu-items" href="#">About Us</a>
+      <a class="menu-items" href="about.html">About Us</a>
 
     </div>
 
@@ -57,16 +57,15 @@
   <div class="intro-div ">
     <div class="row">
       <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-        <h1 style="font-family: bahnschrift; font-weight: normal;">Servo Line Stabilizers </h1>
-        <h4 style="font-family: bahnschrift; font-weight: 300; color:#bfbfbf;">Auto sector – CNC Machines, EDM Machines, Special Purpose Machines (SPMs), etc.</h4>
+        <h1 id="intro-title" style="font-family: bahnschrift; font-weight: normal;">Servo Line Stabilizers </h1>
+        <h4 id="intro-description" style="font-family: bahnschrift; font-weight: 300; color:#bfbfbf;">Auto sector – CNC Machines, EDM Machines, Special Purpose Machines (SPMs), etc.</h4>
         <button class="button" type="button" name="button">View Products<i style="margin-left: 10px;" class="fa-solid fa-arrow-right"></i></button>
 
 
       </div>
 
-      <div class="col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-        <img style="height: 180px; margin-left: 180px;" src="images/sta.png" alt="">
-      </div>
+      <div id="thumb" class="col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        </div>
     </div>
 
   </div>
@@ -75,11 +74,13 @@
 
   </div>
 
+  <a href="https://api.whatsapp.com/send?phone=+917737490706">
+    <div class="chat-button">
+      <i style="color: white;" class="fa-brands fa-square-whatsapp"></i>
+      <h6 style="color: white; margin-left: 10px; margin-top: 8px;">Chat with us</h6>
+    </div>
+  </a>
 
-  <div class="chat-button">
-    <i style="color: white;" class="fa-brands fa-square-whatsapp"></i>
-    <h6 style="color: white; margin-left: 10px; margin-top: 8px;">Chat with us</h6>
-  </div>
 
   <div class="line">
 
@@ -208,12 +209,15 @@
   </div>
 
     <div class="sta-card-2">
-      <h5 style="font-family: bahnschrift;">Send us a enqurie</h5>
-      <h6 style="font-family: bahnschrift; color: grey; font-weight: 300;">Send Us a enqurie so we can know what do you really want and we can cotact you</h6>
-      <input type="text" name="" value="" placeholder="Full Name" class="edit-text">
-      <input type="text" name="" value="" placeholder="Email" class="edit-text">
-      <input type="text" name="" value="" placeholder="Phone Number" class="edit-text">
-      <button type="button" name="button" class="enqurie-button">Send Enqurie</button>
+      <form class="" action="index.html" method="post">
+        <h5 style="font-family: bahnschrift;">Send us a enqurie</h5>
+        <h6 style="font-family: bahnschrift; color: grey; font-weight: 300;">Send Us a enqurie so we can know what do you really want and we can cotact you</h6>
+        <input type="text" name="" value="" placeholder="Full Name" class="edit-text">
+        <input type="email"placeholder="Email" class="edit-text">
+        <input type="text" name="" value="" placeholder="Phone Number" class="edit-text">
+        <button type="button" name="button" class="enqurie-button">Send Enqurie</button>
+
+      </form>
 
     </div>
 

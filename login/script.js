@@ -13,5 +13,5 @@ signInButton.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
 	history.back();
-	alert("dfkhdfd");
+
 });

@@ -2,8 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title></title>
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Font Awsome -->
 
     <script src="https://kit.fontawesome.com/3b2cf0bb84.js" crossorigin="anonymous"></script>
@@ -16,6 +17,7 @@
 
   </head>
   <body>
+
     <div class="top-bar container-fluid">
 
       <div class="logo-div">
@@ -28,11 +30,12 @@
         <div class="vert-line">
         </div>
 
-        <a class="menu-items-selected" href="products.html">Products</a>
+        <a class="menu-items" href="products.html">Products</a>
         <div class="vert-line">
         </div>
 
-        <a class="menu-items" href="about.html">About Us</a>
+
+        <a class="menu-items-selected" href="#">About Us</a>
 
       </div>
 
@@ -42,26 +45,44 @@
           <h6 style="margin-top: 12px; margin-left: 10px; color: #e8e8e8;font-weight: normal; font-family: bahnschrift;">Search Products</h6>
         </div>
 
-        <div class="login-card">
+        <div id="login" class="login-card">
           <i style="color: white;" class="fa-solid fa-user"></i>
         </div>
       </div>
 
     </div>
 
-    <div style="margin: 10%; margin-top: 100px; height: auto;"id="main-content"class="content row">
+
+    <div class="top-about-div">
+      <h1 class="about-title">Servo Line</h1>
+      <h4 class="about-des">Give us a review so we know how we are doing</h4>
+
+      <button style="" class="button button-about" type="button" name="button">GIVE A REVIEW</button>
+
+      <div class="about-top-img-1 floating">
+        <i class="fa-solid fa-users fa-4x"></i>
+        <h4>About US</h4>
+
+      </div>
+
+      <div class="about-top-img-2 floating">
+        <i class="fa-solid fa-address-book fa-4x"></i>
+        <h4>Contact Details</h4>
+      </div>
+
+      <div class="about-top-img-3 floating">
+        <i class="fa-solid fa-briefcase fa-4x"></i>
+        <h4>About Work</h4>
+      </div>
+
+      <div class="about-top-img-4 floating">
+        <i class="fa-brands fa-product-hunt fa-4x"></i>
+        <h4>About products</h4>
+      </div>
 
     </div>
 
 
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script src="java/products.js" charset="utf-8"></script>
 
 
   </body>

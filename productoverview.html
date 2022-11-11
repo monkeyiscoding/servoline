@@ -22,7 +22,8 @@
 
   <div style="width: 100%; margin: 0px; padding-left: 20px;" class="container-fluid top-bar-products">
 
-    <i id="back" style="color: grey;" class="fa-solid fa-arrow-left back-img"></i>
+    <a href="#"><i id="back" style="color: grey;" class="fa-solid fa-arrow-left back-img"></i>
+</a>
 
     <h4 class="main-title" style="margin-left: 20px; margin-top: 5px;">Product Details</h4>
 
@@ -63,7 +64,7 @@
 
 
       <button id="send-enqurie"class="button" type="button" name="button">Send Enqurie</button>
-      <button class="button" type="button" name="button">Contact Us</button>
+      <button id="contact-us" class="button" type="button" name="button">Contact Us</button>
     </div>
   </div>
 
@@ -96,6 +97,24 @@
      </div>
   </div>
 
+  <div id="dialog-contact" class="enquiry-dialog">
+
+    <div class="send-enquiry-content">
+      <a href="#"><i style="color: black;" id="close-contact"class="fa-solid fa-xmark close fa-2x"></i></a>
+
+      <h3 class="enqurie-title">CONTACT US</h3>
+      <h5 class="enqurie-des">ADDRESS - kalwar road govind pura kk tower 2nd floor qphix office <br> Jaipur, Rajasthan </h5>
+
+      <div class="div-1">
+        <button onclick="location.href='tel:+917737490706'" style="border-radius: 10px;" id="send-enqurie-button" class="send-button"type="button" name="button"><i style="margin-right: 10px;" class="fa-solid fa-phone"></i>CONTACT US</button>
+        <div style="width: 30px;" class="">
+
+        </div>
+        <button onclick="location.href='https://api.whatsapp.com/send?phone=+917737490706'"  style="border-radius: 10px;" id="send-enqurie-button" class="send-button"type="button" name="button"><i style="margin-right: 10px;" class="fa-brands fa-whatsapp"></i>CHAT WITH US</button>
+
+      </div>
+    </div>
+  </div>
 
 
   <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
