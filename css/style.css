@@ -58,8 +58,8 @@ html{
 
 .logo-div {
   height: 60px;
-  width: 60px;
-  background-color: #e8e8e8;
+  width: 140px;
+  background-color: var(--secondary-color);
   justify-content: center;
   align-items: center;
   text-align: center;
