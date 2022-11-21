@@ -653,6 +653,11 @@ html{
   font-weight: 300;
 }
 
+.enqurie-des{
+  color: grey;
+  font-weight: 300;
+}
+
 .about-top-img-1{
   height: 200px;
   width: 200px;
@@ -881,5 +886,15 @@ html{
     margin-top: 260px;
     right: 10%;
     z-index: 0;
+  }
+
+  .send-enquiry-content {
+    background-color: white;
+    margin: auto;
+    z-index: 20;
+    /* background-image: url("https://png.pngtree.com/background/20210706/original/pngtree-hd-brick-wall-background-picture-image_206286.jpg"); */
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
   }
 }
