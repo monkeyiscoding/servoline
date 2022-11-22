@@ -372,6 +372,10 @@ html{
 }
 
 
+.top-img{
+  margin-left: 180px;
+}
+
 
 
 @media (max-width: 1100px) {
@@ -581,7 +585,9 @@ html{
     z-index: 0;
   }
 
-
+  .top-img{
+    margin-left: 60px;
+  }
 
 }
 

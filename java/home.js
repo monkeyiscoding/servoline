@@ -20,7 +20,7 @@ firebase.database().ref('IntroBox/').on('value', (snap) => {
   $("#intro-title").html(title);
   $("#intro-description").html(des);
 
-  $("#thumb").html(`<img style="height: 180px; margin-left: 180px; border-radius: 20px;" src="${thumbnail}" alt="">`)
+  $("#thumb").html(`<img class="top-img" style="height: 180px; border-radius: 20px;" src="${thumbnail}" alt="">`)
 
 });
 
