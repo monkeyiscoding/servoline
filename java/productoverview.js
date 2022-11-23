@@ -17,6 +17,8 @@ firebase.initializeApp(firebaseConfig);
 var key = window.onload = localStorage.getItem("key").toString();
 
 
+$("#error").css("display","none");
+
 
 firebase.database().ref('products/' + key).on('value', (snap) => {
   var div = document.getElementById("right-div-top");
@@ -117,40 +119,59 @@ $("#send-enqurie-button").click(function(event) {
   var phone = $("#phone").val();
   var message = $("#message").val();
 
+  var errorText = $("#error");
+  if(name.length < 1){
+    errorText.html("Enter Name");
+    errorText.fadeIn();
+  }
 
-  // getting date
-  var today = new Date();
-  var dd = String(today.getDate()).padStart(2, '0');
-  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  var yyyy = today.getFullYear();
+  else if(!email.endsWith("@gmail.com")){
+    errorText.html("Invalid Email Address");
+    errorText.fadeIn();
+  }
 
-  var today = mm + '/' + dd + '/' + yyyy;
+  else if(phone.length != 10){
+    errorText.html("Invalid Phone Number");
+    errorText.fadeIn();
+  }
 
-  var d = new Date(); // for now
+  else{
+
+      // getting date
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+
+      var today = mm + '/' + dd + '/' + yyyy;
+
+      var d = new Date(); // for now
 
 
-  var time = d.getHours()+":"+d.getMinutes();
+      var time = d.getHours()+":"+d.getMinutes();
 
-  var myRef = firebase.database().ref().push();
-  var key = myRef.key.toString();
-  firebase.database().ref("enqurie/" + key).set({
-    name: name,
-    email: email,
-    phone: phone,
-    message: message,
-    date: today,
-    time: time,
+      var myRef = firebase.database().ref().push();
+      var key = myRef.key.toString();
+      firebase.database().ref("enqurie/" + key).set({
+        name: name,
+        email: email,
+        phone: phone,
+        message: message,
+        date: today,
+        time: time,
 
 
-  }, function(error) {
-    if (error) {
+      }, function(error) {
+        if (error) {
 
-    } else {
-      $("#enqurie").css("display", "none");
-      $("#sended").css("display", "block");
-      localStorage.setItem("enqurie", "send");
-    }
-  })
+        } else {
+          $("#enqurie").css("display", "none");
+          $("#sended").css("display", "block");
+          localStorage.setItem("enqurie", "send");
+        }
+      })
+
+  }
 
 
 })
